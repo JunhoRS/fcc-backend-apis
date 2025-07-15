@@ -1,0 +1,19 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Junho Ramos",
+	"version": "1.2.0",
+	"license": "MIT",
+	"keywords": ["freecodecamp", "backend", "nodejs", "api", "npm"],
+    "description": "Proyecto para el curso de Back End Development and APIs de freeCodeCamp, que enseña a crear un servidor básico con Node.js y Express, y a manejar dependencias con npm.",
+	"dependencies": {
+		"express": "4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
+	}
+}
