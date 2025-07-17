@@ -32,4 +32,9 @@ app.get('/json', (req, res) => {
   res.json({ message });
 });
 
+app.get('/:word/echo', (req, res) => {
+  const { word } = req.params;
+  res.json({ echo: word });
+});
+
 module.exports = app;
