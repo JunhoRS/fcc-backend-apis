@@ -32,6 +32,11 @@ app.get('/json', (req, res) => {
   res.json({ message });
 });
 
+app.get('/name', (req, res) => {
+  const { first, last } = req.query;
+  res.json({ name: `${first} ${last}` });
+});
+
 app.get('/:word/echo', (req, res) => {
   const { word } = req.params;
   res.json({ echo: word });
