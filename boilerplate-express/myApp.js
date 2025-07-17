@@ -4,6 +4,11 @@ const path = require('path');
 
 require('dotenv').config();
 
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path} - ${req.ip}`);
+  next();
+});
+
 app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
@@ -16,6 +21,5 @@ app.get('/json', (req, res) => {
     : "Hello json";
   res.json({ message });
 });
-
 
 module.exports = app;
