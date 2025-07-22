@@ -30,7 +30,7 @@ const findPersonById = (personId, done) => {
 };
 
 const findEditThenSave = (personId, done) => {
-  const foodToAdd = "hamburgfsfaer";
+  const foodToAdd = "hamburger";
 
   done(null /*, data*/);
 };
