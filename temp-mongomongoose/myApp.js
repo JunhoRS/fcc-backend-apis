@@ -46,13 +46,13 @@ const removeById = (personId, done) => {
 };
 
 const removeManyPeople = (done) => {
-  const nameToRemove = "Maryy";
+  const nameToRemove = "Mary";
 
   done(null /*, data*/);
 };
 
 const queryChain = (done) => {
-  const foodToSearch = "burritoo";
+  const foodToSearch = "burrito";
 
   done(null /*, data*/);
 };
